@@ -1,0 +1,86 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.course-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#cimg
+{
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px;
+}
+.bxs
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s ease;
+}
+.bxs:hover
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 85%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.ico
+{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+.coinf
+{
+    margin: 20px 0px;
+    min-width: 800px;
+}
+.btnsbx
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.btn
+{
+    height: 100px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 0px solid black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease;
+    margin-bottom: 10px;
+}
+.btn:hover
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    color: black;
+    height: 110px;
+    width: 220px;
+    margin-bottom: 0px;
+}

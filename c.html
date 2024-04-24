@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="courses.css">
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+        <nav>
+            <div class="logob">
+                <img src="logo.png" alt="" class="logo">
+            </div>
+            <div class="right">
+                <div class="text" onclick="BC()">Courses</div>
+                <div class="text" onclick="PR()">Pricing</div>
+                <div class="text" onclick="AB()">About</div>
+                <div class="profileb">
+                        <img src="login_img.png" alt="" class="logo" id="profile" onclick="login()">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="inf coinf" id="inf">
+                <div class="course-info">
+                    <img src="" alt="" id="cimg">
+                </div>
+                <h1 id="ctitle"></h1>
+                <div class="btnsbx">
+                    <button class="btn">
+                        <img src="ricon.png" class="ico" srcset="">
+                        Resources</button>
+                    <button class="btn">
+                        <img src="yicon.png" class="ico" srcset="">
+                        Youtube Videoes</button>
+                        <button class="btn">
+                        <img src="oicon.png" class="ico" srcset="">
+                        Other Sources</button>
+                </div>
+            </div>
+        </main>
+        <script>
+            if(localStorage.getItem('logged') == 1){
+                document.getElementById("profile").src = "profile.jpg";}
+            else{
+                document.getElementById("profile").src = "login_img.png";}
+        </script>
+        <script src="links.js"></script>
+        <script src="courses.js"></script>
+        <script src="course.js"></script>
+    </body>
+</html>

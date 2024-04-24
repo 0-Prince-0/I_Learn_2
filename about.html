@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logob">
+            <img src="logo.png" alt="" class="logo">
+        </div>
+        <div class="right">
+            <div class="text" onclick="BC()">Courses</div>
+            <div class="text" onclick="PR()">Pricing</div>
+            <div class="text" onclick="AB()">About</div>
+            <div class="profileb">
+                    <img src="" alt="" class="logo" id="profile" onclick="login()">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="amain">
+        <div class="about">
+            <h1>About Us</h1>
+            <p>
+                We are a team of developers who are passionate about teaching. <br>We are dedicated to providing the best learning experience for our students. <br>We believe that learning should be fun and interactive. <br>We are constantly working on improving our platform and adding new features to make learning more enjoyable. <br>Our goal is to help you achieve your full potential and become the best version of yourself. <br>We are committed to providing high-quality education at an affordable price. <br>We are here to support you every step of the way and help you reach your goals. <br>Join us today and start your learning journey with us!
+            </p>
+        </div>
+        <div class="feedback about">
+            <h2>Feedback</h2>
+            <form>
+                <!-- <label for="feedback">Your Feedback:</label><br> -->
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required placeholder="Feedback"></textarea><br><br>
+                <input type="submit" value="Submit" class="gbtn" id="sub">
+            </form>
+        </div>
+        <div class="contact about">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" id="name" name="name" required placeholder="Name" class="field"><br><br>
+                <input type="email" id="email" name="email" required placeholder="Email" class="field"><br><br>
+                <textarea id="message" name="message" rows="4" cols="50" required placeholder="Message"></textarea><br><br>
+                <input type="submit" value="Submit" class="gbtn" id="sub2">
+            </form>
+        </div>
+    </main>
+    
+<script src="links.js"></script>
+<script src="courses.js"></script>
+<script src="course.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Learn</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <nav>
+        <div class="logob">
+            <img src="logo.png" alt="" class="logo" onclick="HM()">
+        </div>
+        <div class="right">
+            <div class="text" onclick="BC()">Courses</div>
+            <div class="text" onclick="PR()">Pricing</div>
+            <div class="text" onclick="AB()">About</div>
+            <div class="profileb">
+                    <img src="" alt="" class="logo" id="profile" onclick="login()">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bar">
+            <div class="srch">
+                <input type="text" id="srch" placeholder="Search">
+            </div>
+            <div class="srt">
+                Sort :&nbsp<select name="srt" id="ssrt">
+                    <option value="1">Name</option>
+                    <option value="3">Rating</option>
+                    <option value="4">Price</option>
+                </select>
+            </div>
+        </div>
+        <div class="resultb">
+            <div class="r" id="r1" onclick="cclicked(1)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli1">
+                </div>
+                <div class="inf">
+                    <font id="ct1" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci11">
+                        <img src="" class="review_img" id="ci12">
+                        <img src="" class="review_img" id="ci13">
+                        <img src="" class="review_img" id="ci14">
+                        <img src="" class="review_img" id="ci15">
+                        <font class="review" id="cr1"></font>
+                    </div>
+                    <font class="likes review" id="cl1"></font>
+                </div>
+            </div>
+            <div class="r" id="r2" onclick="cclicked(2)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli2">
+                </div>
+                <div class="inf">
+                    <font id="ct2" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci21">
+                        <img src="" class="review_img" id="ci22">
+                        <img src="" class="review_img" id="ci23">
+                        <img src="" class="review_img" id="ci24">
+                        <img src="" class="review_img" id="ci25">
+                        <font class="review" id="cr2"></font>
+                    </div>
+                    <font class="likes review" id="cl2"></font>
+                </div>
+            </div>
+            <div class="r" id="r3" onclick="cclicked(3)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli3">
+                </div>
+                <div class="inf">
+                    <font id="ct3" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci31">
+                        <img src="" class="review_img" id="ci32">
+                        <img src="" class="review_img" id="ci33">
+                        <img src="" class="review_img" id="ci34">
+                        <img src="" class="review_img" id="ci35">
+                        <font class="review" id="cr3"></font>
+                    </div>
+                    <font class="likes review" id="cl3"></font>
+                </div>
+            </div>
+            <div class="r" id="r4" onclick="cclicked(4)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli4">
+                </div>
+                <div class="inf">
+                    <font id="ct4" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci41">
+                        <img src="" class="review_img" id="ci42">
+                        <img src="" class="review_img" id="ci43">
+                        <img src="" class="review_img" id="ci44">
+                        <img src="" class="review_img" id="ci45">
+                        <font class="review" id="cr4"></font>
+                    </div>
+                    <font class="likes review" id="cl4"></font>
+                </div>
+            </div>
+            <div class="r" id="r5" onclick="cclicked(5)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli5">
+                </div>
+                <div class="inf">
+                    <font id="ct5" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci51">
+                        <img src="" class="review_img" id="ci52">
+                        <img src="" class="review_img" id="ci53">
+                        <img src="" class="review_img" id="ci54">
+                        <img src="" class="review_img" id="ci55">
+                        <font class="review" id="cr5"></font>
+                    </div>
+                    <font class="likes review" id="cl5"></font>
+                </div>
+            </div>
+            <div class="r" id="r6" onclick="cclicked(6)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli6">
+                </div>
+                <div class="inf">
+                    <font id="ct6" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci61">
+                        <img src="" class="review_img" id="ci62">
+                        <img src="" class="review_img" id="ci63">
+                        <img src="" class="review_img" id="ci64">
+                        <img src="" class="review_img" id="ci65">
+                        <font class="review" id="cr6"></font>
+                    </div>
+                    <font class="likes review" id="cl6"></font>
+                </div>
+            </div>
+            <div class="r" id="r7" onclick="cclicked(7)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli7">
+                </div>
+                <div class="inf">
+                    <font id="ct7" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci71">
+                        <img src="" class="review_img" id="ci72">
+                        <img src="" class="review_img" id="ci73">
+                        <img src="" class="review_img" id="ci74">
+                        <img src="" class="review_img" id="ci75">
+                        <font class="review" id="cr7"></font>
+                    </div>
+                    <font class="likes review" id="cl7"></font>
+                </div>
+            </div>
+            <div class="r" id="r8" onclick="cclicked(8)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli8">
+                </div>
+                <div class="inf">
+                    <font id="ct8" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci81">
+                        <img src="" class="review_img" id="ci82">
+                        <img src="" class="review_img" id="ci83">
+                        <img src="" class="review_img" id="ci84">
+                        <img src="" class="review_img" id="ci85">
+                        <font class="review" id="cr8"></font>
+                    </div>
+                    <font class="likes review" id="cl8"></font>
+                </div>
+            </div>
+            <div class="r" id="r9" onclick="cclicked(9)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli9">
+                </div>
+                <div class="inf">
+                    <font id="ct9" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci91">
+                        <img src="" class="review_img" id="ci92">
+                        <img src="" class="review_img" id="ci93">
+                        <img src="" class="review_img" id="ci94">
+                        <img src="" class="review_img" id="ci95">
+                        <font class="review" id="cr9"></font>
+                    </div>
+                    <font class="likes review" id="cl9"></font>
+                </div>
+            </div>
+            <div class="r" id="r10" onclick="cclicked(10)">
+                <div class="llogo">
+                    <img src="" alt="" class="limg" id="cli10">
+                </div>
+                <div class="inf">
+                    <font id="ct10" class="title"></font>
+                    <div class="rvs">
+                        <img src="" class="review_img" id="ci101">
+                        <img src="" class="review_img" id="ci102">
+                        <img src="" class="review_img" id="ci103">
+                        <img src="" class="review_img" id="ci104">
+                        <img src="" class="review_img" id="ci105">
+                        <font class="review" id="cr10"></font>
+                    </div>
+                    <font class="likes review" id="cl10"></font>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<script src="links.js"></script>
+<script src="courses.js"></script>
+<script src="course.js"></script>
+</body>
+</html>

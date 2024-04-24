@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Learn</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+
+    <main class="main">
+        <div class="headt">
+            <font class="fo">
+                Learn <span id="course">Python</span>
+            </font>
+            <button class="bbtn" onclick="BC()">
+                Browse Courses
+            </button>
+            <div class="codebox">
+                <font class="fo" id="codef">
+                    <span id="code">Python</span>
+                </font>
+            </div>
+        </div>
+        <div class="headi">
+            <img src="L2.png" alt="" class="hi">
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#code', {
+        strings: [
+        '<b>C</b><br><hr>#include&ltstdio.h&gt<br>int main() {<br>printf("Hello, World!");<br>return 0;<br>}',
+        '<b>Python</b><br><hr>print("Hello, World!")', 
+        '<b>Java</b><br><hr>class HelloWorld {<br>public static void main(String[] args) {<br>System.out.println("Hello, World!"); <br>}<br>}',
+        '<b>Java Script</b><br><hr>console.log("Hello, World!");',
+        '<b>Swift</b><br><hr>import Foundation<br>print("Hello, World!")',
+        '<b>C++</b><br><hr>#include&ltiostream&gt<br>using namespace std;<br>int main() {<br>cout << "Hello, World!";<br>return 0;<br>}',
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script>
+        var typed = new Typed('#course', {
+        strings: [
+        'C',
+        'Python', 
+        'Java',
+        'Web <br>Devlopment',
+        'Swift',
+        'C++',
+        'Dsa',
+        'Blender',
+        'Figma',
+        'App <br>Devlopment',
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script>
+        const img = document.querySelector('.hi');
+        function updateImage() {
+            img.src = 'L' + Math.floor(Math.random() * 4) + '.png';
+        }
+        setInterval(updateImage, 5000);
+    </script>
+    
+<script src="links.js"></script>
+<!-- <script src="courses.js"></script> -->
+<!-- <script src="course.js"></script> -->
+</body>
+</html>
